@@ -1,7 +1,7 @@
 const QuotesApp = () => {
   return (
     <div className="container">
-        <div className="quotes-app">
+        <div className="quote-container">
             <h1 className="app-heading">Quote.</h1>
             <i className="bx bxs-heart fav-icon"></i>
             <div className="quote">

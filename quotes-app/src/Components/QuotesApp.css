@@ -6,7 +6,7 @@
     place-items: center;
 }
 
-.quotes-container{
+.quote-container{
     position: relative;
     width: 90vmin;
     aspect-ratio: 3/2;
@@ -47,9 +47,24 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-
-
-    
-
-    
 }
+
+.quote-text{
+    font-size: clamp(1.6rem, 2cqi, 3rem);
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    width: clamp(25rem, 35cqi, 50rem);
+}
+
+.quote-author{
+    font-family: "Birthsone", cursive;
+    font-size: 1.4rem;
+    color: #888;
+    text-align:right;
+    
+
+}
+
