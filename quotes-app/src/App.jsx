@@ -1,5 +1,5 @@
-import QuotesApp from "./Components/QuotesApp"
-import "./Components/QuotesApp"
+import QuotesApp from "./Components/QuotesApp";
+import "./Components/QuotesApp.css";
 
 const App = () => {
   return (
