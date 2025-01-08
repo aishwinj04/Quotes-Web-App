@@ -1,5 +1,5 @@
 :root {
-    --box-color: #343434;
+    --box-color: #282626;
     --shadow: #212226;
     --primarycolor: #D4145A;
     --secondarycolor: #FBB03B;
@@ -57,6 +57,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+
 }
 
 .quote i{
@@ -68,11 +69,11 @@
 .quote-text{
     font-size: clamp(1.6rem, 2cqi, 3rem);
     font-family: "Comfortaa", sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     line-height: 3rem;
     text-align: center;
     letter-spacing: 0.1rem;
-    width: clamp(25rem, 35cqi, 50rem);
+    width: clamp(25rem, 35cqi, 40rem);
 }
 
 .quote-author{
@@ -142,7 +143,7 @@
     width: clamp(2rem, 4cqi, 6rem);
     background-image: linear-gradient(to top, var(--secondarycolor), rgb(248, 108, 37));
     left: 7rem;
-    bottom: 15cqi;
+    bottom: 15rem;
 
 }
 .circle-3 {
