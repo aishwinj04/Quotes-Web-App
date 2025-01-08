@@ -21,6 +21,12 @@ const QuotesApp = () => {
         setShowFavourites(!showFavourites)
 
     }
+
+    const [favourites, setFavourites] = useState([])
+    const addToFavourites = () => {
+        setFavourites([...favourites, quote])
+    }
+
   return (
     <div className="container">
         <div className="quote-container">
@@ -47,15 +53,17 @@ const QuotesApp = () => {
                 <button className="btn-close" onClick={toggleFavourites}>
                     <i className="bx bx-x bx-flashing"></i>
                 </button>
-                <div className="fav-quote">
-                    <div className="fav-quote-delete">
+
+                {favourites.map((favQuote, index) => (<div className="fav-quote">
+                    <div className="fav-quote-delete" key={index}>
                         <i className="bx bx-x-circle bx-tada-hover"></i>
                     </div>
                     <div className="fav-quote-content">
                         <div className="fav-quote-text">Ask not what your country can do for you; ask what you can do for your country</div>
                         <div className="fav-quote-author">John Kennedy</div>
                     </div>
-                </div>
+                </div>))}
+                
             </div>
 )}
 
