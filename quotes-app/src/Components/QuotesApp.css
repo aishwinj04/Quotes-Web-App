@@ -7,6 +7,7 @@
 }
 
 .quotes-app{
+    position: relative;
     width: 90vmin;
     aspect-ratio: 3/2;
     background-color: #343434;
@@ -19,4 +20,21 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 5rem;
     color: white;
+}
+
+.fav-icon{
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+    font-size: 4rem;
+    background-image: linear-gradient(to left, #e67474, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    text-shadow: -0.1rem 0.11rem 9rem rgb(246, 119, 119);
+}
+
+.fav-icon:active{
+    transform: translateY(0.5rem);
+
 }
