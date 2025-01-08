@@ -3,7 +3,9 @@ import "./Components/QuotesApp"
 
 const App = () => {
   return (
-    <div>QuotesApp</div>
+    <div>
+      <QuotesApp />
+    </div>
   )
 }
 
