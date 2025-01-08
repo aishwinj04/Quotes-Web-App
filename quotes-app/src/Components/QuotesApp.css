@@ -1,3 +1,9 @@
+:root {
+    --box-color: #343434;
+    --shadow: #212226;
+
+}
+
 .container{
     width: 100%;
     height:100vh;
@@ -10,10 +16,10 @@
     position: relative;
     width: 90vmin;
     aspect-ratio: 3/2;
-    background-color: #343434;
+    background-color: var(--box-color);
     border-radius: 4rem;
     padding: 4rem;
-    box-shadow: -2rem 2rem 5rem #212226
+    box-shadow: -2rem 2rem 5rem var(--shadow)
 }
 
 .app-heading{
@@ -27,7 +33,7 @@
     right: 5rem;
     top: 5rem;
     font-size: 4rem;
-    background-image: linear-gradient(to left, #e67474, #ff0000);
+    background-image: linear-gradient(to left, #f4d3d3, #ffcfcf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -78,3 +84,39 @@
 }
 
 
+.buttons{
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    column-gap: 2rem;
+}
+
+.btn{
+    width: 18rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: 3rem 2rem 4rem var(--shadow);
+    text-shadow: 0.1rem 0.6rem 1.1rem var(--shadow)
+}
+
+.btn:active{
+    transform: translateY(0.5rem);
+}
+
+.btn-new{
+    
+}
+
+.btn-fav{
+    background-image: linear-gradient(to left, rgb(243, 102, 102), rgb(232, 47, 47));
+    color: white;
+}
