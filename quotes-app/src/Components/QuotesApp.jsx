@@ -7,12 +7,12 @@ const QuotesApp = () => {
     })
 
     const fetchNewQuote = async () => {
-        const url = "https://go-quote.azurewebsites.net/docs/#/default/get_random_quote" /* keyless api */
+        const url = "https://go-quote.azurewebsites.net/" /* keyless api */
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
         setQuote({
-            text:data.text,
+            text: data.text,
             author: data.author
         })
     }
@@ -20,7 +20,7 @@ const QuotesApp = () => {
     <div className="container">
         <div className="quote-container">
             <h1 className="app-heading">Quote.</h1>
-            <i className="bx bxs-heart fav-icon"></i>
+            <i className="bx bxs-heart bx-tada-hover fav-icon"></i>
             <div className="quote">
                 <i className="bx bxs-quote-alt-left left-quote"></i>
                 <p className="quote-text">{quote.text}</p>
@@ -36,9 +36,19 @@ const QuotesApp = () => {
             <div className="buttons">
                 <button className="btn btn-new" onClick={fetchNewQuote}>New Quote</button>
                 <button className="btn btn-fav">Favourite</button>
-                
-                
             </div>
+
+            <div className="favorites">
+                <button className="btn-close">
+                    <i className="bx bx-x"></i>
+                </button>
+                <div className="fav-quote">
+                    <div className="fav-quote-delete">
+                        <i className="bx bx-x-cirlce"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
   )
