@@ -49,6 +49,12 @@
     row-gap: 1rem;
 }
 
+.quote i{
+    font-size: 3rem;
+    color: white;
+
+}
+
 .quote-text{
     font-size: clamp(1.6rem, 2cqi, 3rem);
     font-family: "Comfortaa", sans-serif;
@@ -64,7 +70,11 @@
     font-size: 1.4rem;
     color: #888;
     text-align:right;
-    
 
 }
+
+.right-quote{
+    text-align: right;
+}
+
 
