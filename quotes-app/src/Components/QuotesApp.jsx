@@ -54,9 +54,13 @@ const QuotesApp = () => {
                     <i className="bx bx-x bx-flashing"></i>
                 </button>
 
-                {favourites.map((favQuote, index) => (<div className="fav-quote">
-                    <div className="fav-quote-delete" key={index}>
-                        <i className="bx bx-x-circle bx-tada-hover"></i>
+                {favourites.map((favQuote, index) => (<div className="fav-quote" key={index}>
+                    <div className="fav-quote-delete">
+                        <i className="bx bx-x-circle bx-tada-hover" onClick={() => {
+                            const updatedFavourites = favourites.filter((item, i) =>
+                            i !== index) // index being the position of clicked quote 
+                            setFavourites(updatedFavourites)
+                        }}></i>
                     </div>
                     <div className="fav-quote-content">
                         <div className="fav-quote-text">{favQuote.text}</div>
