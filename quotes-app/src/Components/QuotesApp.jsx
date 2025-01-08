@@ -38,13 +38,17 @@ const QuotesApp = () => {
                 <button className="btn btn-fav">Favourite</button>
             </div>
 
-            <div className="favorites">
+            <div className="favourites">
                 <button className="btn-close">
-                    <i className="bx bx-x"></i>
+                    <i className="bx bx-x bx-flashing"></i>
                 </button>
                 <div className="fav-quote">
                     <div className="fav-quote-delete">
-                        <i className="bx bx-x-cirlce"></i>
+                        <i className="bx bx-x-circle bx-tada-hover"></i>
+                    </div>
+                    <div className="fav-quote-content">
+                        <div className="fav-quote-text">Ask not what your country can do for you; ask what you can do for your country</div>
+                        <div className="fav-quote-author">John Kennedy</div>
                     </div>
                 </div>
             </div>
