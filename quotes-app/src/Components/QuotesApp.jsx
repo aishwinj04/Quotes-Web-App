@@ -46,7 +46,7 @@ const QuotesApp = () => {
             </div>
             <div className="buttons">
                 <button className="btn btn-new" onClick={fetchNewQuote}>New Quote</button>
-                <button className="btn btn-fav">Favourite</button>
+                <button className="btn btn-fav" onClick={addToFavourites}>Add to Favourites</button>
             </div>
 
             {showFavourites && (<div className="favourites">
@@ -59,8 +59,8 @@ const QuotesApp = () => {
                         <i className="bx bx-x-circle bx-tada-hover"></i>
                     </div>
                     <div className="fav-quote-content">
-                        <div className="fav-quote-text">Ask not what your country can do for you; ask what you can do for your country</div>
-                        <div className="fav-quote-author">John Kennedy</div>
+                        <div className="fav-quote-text">{favQuote.text}</div>
+                        <div className="fav-quote-author">{favQuote.author}</div>
                     </div>
                 </div>))}
                 
