@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Comfortaa:wght@300..700&family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Comfortaa:wght@300..700&family=DM+Serif+Text:ital@0;1&family=Dosis:wght@200..800&display=swap');
 
 * {
   margin: 0;
@@ -9,5 +9,5 @@
 
 html {
   font-size: 62.5% /* rem to 10px */
-  
+
 }

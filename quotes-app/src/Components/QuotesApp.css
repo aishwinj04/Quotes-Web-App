@@ -14,3 +14,9 @@
     padding: 4rem;
     box-shadow: -2rem 2rem 5rem #212226
 }
+
+.app-heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: white;
+}
