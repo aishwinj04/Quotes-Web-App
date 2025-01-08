@@ -24,7 +24,12 @@ const QuotesApp = () => {
 
     const [favourites, setFavourites] = useState([])
     const addToFavourites = () => {
-        setFavourites([...favourites, quote])
+        const isInFavourites = favourites.some((fav) => fav.text === quote.text && fav.author === quote.author)
+
+        if (!isInFavourites){
+             setFavourites([...favourites, quote])
+        }
+       
     }
 
   return (
