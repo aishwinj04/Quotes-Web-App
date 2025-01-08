@@ -13,8 +13,8 @@ const QuotesApp = () => {
             <div className="circles">
                 <div className="circle-1"></div>
                 <div className="circle-2"></div>
-                <div className="circle3"></div>
-                <div className="circle4"></div>
+                <div className="circle-3"></div>
+                <div className="circle-4"></div>
             </div>
             <div className="buttons">
                 <button className="btn btn-new">New Quote</button>

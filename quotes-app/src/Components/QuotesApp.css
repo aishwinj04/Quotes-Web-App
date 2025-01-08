@@ -1,7 +1,8 @@
 :root {
     --box-color: #343434;
     --shadow: #212226;
-
+    --primarycolor: #D4145A;
+    --secondarycolor: #FBB03B;
 }
 
 .container{
@@ -19,7 +20,10 @@
     background-color: var(--box-color);
     border-radius: 4rem;
     padding: 4rem;
-    box-shadow: -2rem 2rem 5rem var(--shadow)
+    box-shadow: -2rem 2rem 5rem var(--shadow);
+    overflow: hidden; /* clip off circles */
+    
+
 }
 
 .app-heading{
@@ -119,4 +123,39 @@
 .btn-fav{
     background-image: linear-gradient(to left, rgb(243, 102, 102), rgb(232, 47, 47));
     color: white;
+}
+
+.circles div {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.circle-1{
+    width: clamp(5rem, 10cqi, 16rem);
+    background-image: linear-gradient(to top, var(--primarycolor), rgb(255, 92, 92));
+    top: -6cqi;
+    left: 50%;
+}
+
+.circle-2{
+    width: clamp(2rem, 4cqi, 6rem);
+    background-image: linear-gradient(to top, var(--secondarycolor), rgb(248, 108, 37));
+    left: 7rem;
+    bottom: 15cqi;
+
+}
+.circle-3 {
+    width: clamp(5rem, 10cqi, 16rem);
+    background-image: linear-gradient(to right, var(--primarycolor), rgb(255, 92, 92));
+    top: 50%;
+    right: -5cqi;
+}
+
+.circle-4 {
+    width: clamp(1rem, 1cqi, 2rem);
+    background-image: linear-gradient(to left, var(--secondarycolor), rgb(248, 108, 37));
+    top: 30%;
+
+
 }
