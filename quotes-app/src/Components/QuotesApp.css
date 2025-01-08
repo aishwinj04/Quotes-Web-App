@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     height:100vh;
-    background-image: linear-gradient(to right, #D4145A, #FBB03B);
+    background-image: linear-gradient(to right, var(--primarycolor), var(--secondarycolor));
     display: grid;
     place-items: center;
 }
@@ -168,7 +168,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to left, #9fd2ff,#2d49ff);
+    background-image: linear-gradient(to left, #8ac0ef, #2d49ff);
     padding: 3rem 7rem 3rem 3rem;
 }   
 
@@ -206,7 +206,7 @@
 }
 
 .fav-quote-author{
-    color: #888;
+    color: #ffffff;
     font-size: 1.3rem;
     font-family: Birthstone, cursive;
     text-align: right;

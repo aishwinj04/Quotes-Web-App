@@ -5,7 +5,6 @@ const QuotesApp = () => {
         text: "Ask not what your country can do for you; ask what you can do for your country",
         author: "John Kennedy"
     })
-
     const fetchNewQuote = async () => {
         const url = "https://go-quote.azurewebsites.net/" /* keyless api */
         const response = await fetch(url)
@@ -16,11 +15,17 @@ const QuotesApp = () => {
             author: data.author
         })
     }
+
+    const [showFavourites, setShowFavourites] = useState(false)
+    const toggleFavourites = () => {
+        setShowFavourites(!showFavourites)
+
+    }
   return (
     <div className="container">
         <div className="quote-container">
             <h1 className="app-heading">Quote.</h1>
-            <i className="bx bxs-heart bx-tada-hover fav-icon"></i>
+            <i className="bx bxs-heart bx-tada-hover fav-icon" onClick={toggleFavourites}></i>
             <div className="quote">
                 <i className="bx bxs-quote-alt-left left-quote"></i>
                 <p className="quote-text">{quote.text}</p>
@@ -38,8 +43,8 @@ const QuotesApp = () => {
                 <button className="btn btn-fav">Favourite</button>
             </div>
 
-            <div className="favourites">
-                <button className="btn-close">
+            {showFavourites && (<div className="favourites">
+                <button className="btn-close" onClick={toggleFavourites}>
                     <i className="bx bx-x bx-flashing"></i>
                 </button>
                 <div className="fav-quote">
@@ -52,7 +57,9 @@ const QuotesApp = () => {
                     </div>
                 </div>
             </div>
+)}
 
+            
         </div>
     </div>
   )
