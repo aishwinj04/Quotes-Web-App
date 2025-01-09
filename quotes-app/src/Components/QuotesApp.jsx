@@ -32,10 +32,10 @@ const QuotesApp = () => {
        
     }
 
-  return (
+  return (.
     <div className="container">
         <div className="quote-container">
-            <h1 className="app-heading">Quote.</h1>
+            <h1 className="app-heading">InspireMe.</h1>
             <i className="bx bxs-heart bx-tada-hover fav-icon" onClick={toggleFavourites}></i>
             <div className="quote">
                 <i className="bx bxs-quote-alt-left left-quote"></i>
