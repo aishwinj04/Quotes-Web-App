@@ -169,6 +169,7 @@
     overflow-y: auto;
 }   
 
+
 .fav-quote{
     display: flex;
     column-gap: 1rem;

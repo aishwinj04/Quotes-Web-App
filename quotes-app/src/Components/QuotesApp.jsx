@@ -3,7 +3,7 @@ import { useState } from "react"
 const QuotesApp = () => {
     const [quote, setQuote] = useState({
         text: "Ask not what your country can do for you; ask what you can do for your country",
-        author: "John Kennedy"
+        author: "John Kennedy" // default for initial view 
     })
     const fetchNewQuote = async () => {
         const url = "https://go-quote.azurewebsites.net/" /* keyless api */
@@ -35,7 +35,7 @@ const QuotesApp = () => {
   return (
     <div className="container">
         <div className="quote-container">
-            <h1 className="app-heading">Quote.</h1>
+            <h1 className="app-heading">InspireMe.</h1>
             <i className="bx bxs-heart bx-tada-hover fav-icon" onClick={toggleFavourites}></i>
             <div className="quote">
                 <i className="bx bxs-quote-alt-left left-quote"></i>
