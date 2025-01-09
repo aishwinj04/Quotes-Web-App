@@ -32,7 +32,7 @@ const QuotesApp = () => {
        
     }
 
-  return (
+  return (.
     <div className="container">
         <div className="quote-container">
             <h1 className="app-heading">InspireMe.</h1>
