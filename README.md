@@ -19,7 +19,7 @@ https://quotes-app-aishwinj.netlify.app/
 ## How It Works
 ### Fetching Quotes
 - The app fetches a random quote from an API when you click the New Quote button.
-- The API used is https://go-quote.azurewebsites.net/, which does not require an API key.
+- The API used is from https://github.com/well300/quotes-api.
   
 ### Favorites
 - Users can add a quote to the Favorites list by clicking the Add to Favourites button.
