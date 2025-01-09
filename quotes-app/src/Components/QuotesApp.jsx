@@ -6,12 +6,12 @@ const QuotesApp = () => {
         author: "John Kennedy" // default for initial view 
     })
     const fetchNewQuote = async () => {
-        const url = "https://api.paperquotes.com/apiv1/quotes/?maxlength=20&minlength=5/" 
+        const url = "https://quotes-api-self.vercel.app/quote"
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
         setQuote({
-            text: data.text,
+            text: data.quote, // quote and author name of the json keys
             author: data.author
         })
     }
