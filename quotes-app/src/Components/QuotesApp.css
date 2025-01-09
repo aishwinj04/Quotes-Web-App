@@ -212,3 +212,21 @@
     text-align: right;
 }
 
+@media (max-width: 850px){
+    .quote-container {
+        width: 75vmin;
+        aspect-ratio: 2/3;
+    }
+
+}
+
+@media (max-width: 550px){
+    .quote-container{
+        aspect-ratio: 1/2;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}
