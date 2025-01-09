@@ -117,10 +117,6 @@
     transform: translateY(0.5rem);
 }
 
-.btn-new{
-    
-}
-
 .btn-fav{
     background-image: linear-gradient(to left, rgb(243, 102, 102), rgb(232, 47, 47));
     color: white;
@@ -170,6 +166,7 @@
     bottom: 0;
     background-image: linear-gradient(to left, #8ac0ef, #2d49ff);
     padding: 3rem 7rem 3rem 3rem;
+    overflow-y: auto;
 }   
 
 .fav-quote{
