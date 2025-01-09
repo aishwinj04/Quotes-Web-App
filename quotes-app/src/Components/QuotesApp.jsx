@@ -6,7 +6,7 @@ const QuotesApp = () => {
         author: "John Kennedy" // default for initial view 
     })
     const fetchNewQuote = async () => {
-        const url = "https://go-quote.azurewebsites.net/" /* keyless api */
+        const url = "https://api.paperquotes.com/apiv1/quotes/?maxlength=20&minlength=5/" 
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
