@@ -1,7 +1,7 @@
 # Quotes Web App
 
-A React application that displays a random quote from an API and allows users to save their favourite quotes.
 ![Mockup](quotes-app/Mockup.png)
+InspireMe is a React app that fetches random quotes from an API and lets users save their favourites with a single click, providing an easy way to discover and curate inspiring quotes.
 
 ## Features
 
