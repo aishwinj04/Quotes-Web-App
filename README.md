@@ -1,7 +1,7 @@
 # Quotes Web App
 
 A React application that displays a random quote from an API and allows users to save their favourite quotes.
-![Mockup](Mockup.png)
+![Mockup](quotes-app/Mockup.png)
 
 ## Features
 
