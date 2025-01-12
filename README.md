@@ -26,8 +26,3 @@ https://quotes-app-aishwinj.netlify.app/
 - Users can add a quote to the Favorites list by clicking the Add to Favourites button.
 - The app stores the favourites locally and displays them when toggled by clicking the heart icon.
 - Users can also delete quotes from their favourites.
-  
-### Code Structure
-QuotesApp Component: The main component that handles quote fetching, favorites management, and UI rendering.
-useState Hooks: Manage the state for quotes, favourites, and the visibility of the favourites list.
-Screenshot
