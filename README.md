@@ -1,4 +1,4 @@
-# Quotes Web App
+# InpireMe: Quotes Web App
 
 ![Mockup](quotes-app/Mockup.png)
 InspireMe is a React app that fetches random quotes from an API and lets users save their favourites with a single click, providing an easy way to discover and curate inspiring quotes.
