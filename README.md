@@ -11,7 +11,6 @@ InspireMe is a React app that fetches random quotes from an API and lets users s
 - Interactive UI with styled components.
 - Ability to delete a quote from the favourites list.
 
-
 ## Live Site
 The QuotesApp is hosted on Netlify. You can view the live app at the following URL:
 
